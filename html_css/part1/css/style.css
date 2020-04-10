@@ -1,0 +1,61 @@
+html{
+    font-size: 63.5%;
+}
+
+body{
+    color:#333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothihc ProN",sans-serif;
+}
+
+
+.header
+{
+    width:100%;
+    background-color: white;
+    padding: 28px 0 10px;
+}
+
+.wrapper
+{
+    width:970px;
+    margin:30px auto 40px;
+    background-color: aqua;
+}
+
+.main
+{
+    display: block;
+    float: left;
+    width:660px;
+    background-color: aquamarine;
+}
+
+.sidemenu
+{
+    float:right;
+    width: 275px;
+    background-color: cadetblue;
+}
+
+.footer
+{
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.logo{
+    width: 225px;
+    height: 56px;
+    margin: 0 auto;
+    background:url('../images/logo.png') no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
