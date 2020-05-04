@@ -44,6 +44,17 @@ a:link,a:visited,a:hover,a:active{
     opacity: 0.8;
 }
 
+.item > a:hover::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    background-color: rgba(0,0,0,0.3);
+    height: 403px;
+}
+
 .item-m{
     width: 364px;
 }
@@ -132,10 +143,15 @@ a:link,a:visited,a:hover,a:active{
     margin: 10px;
 }
 
-.item .more{
+.item > a .more {
+  display: none;
+}
+
+.item > a:hover .more{
     display: inline-block;
     position: absolute;
     border: 3px solid #fff;
+    top: 0px;
     width: 100px;
     height: 40px;
     color: #fff;
@@ -144,7 +160,7 @@ a:link,a:visited,a:hover,a:active{
     font-weight: bold;
     font-family: "Trebuchet MS","Hiragino Kaku Gothic ProN" ,Meiryo,sans-serif;
     line-height: 3rem;
-    margin: 35px 32px 0;
+    z-index: 1;
 }
 
 .item-m .more{
