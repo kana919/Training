@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 30px;
+    background-color: #f8f7fb;
+    color: #333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+a:link,a:visited,a:hover,a:active{
+    color: #7c5119;
+    text-decoration: none;
+}
+
+.item{
+    width: 180px;
+    border-bottom: 3px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+.item > a{
+    display: block;
+    margin: -8px -8px -11px;
+    padding: 8px 8px 11px;
+    border-radius: inherit;
+    color: #777;
+    transition:all 0.3s;
+}
+
+.item > a:hover{
+    box-shadow: 0 0 6px -1px rgba(0,0,0,0.3);
+    opacity: 0.8;
+}
+
+.item-m{
+    width: 364px;
+}
+
+.item-l{
+    width:732px;
+}
+
+.item .image-wrap{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.item .image{
+    display: block;
+    width: 100%;
+}
+
+.item .effect{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+    height: 109px;
+}
+
+.item-l .effect{
+    height: 403px;
+}
+
+.item-m .effect{
+    height: 146px;
+}
+
+.item .image::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 0, 1.0);
+    z-index: 1;
+}
+
+.item .category{
+    letter-spacing: 1px;
+    margin: 15px 9px 10px;
+    font-weight: bold;
+    color: #aaa;
+    font-family: "Trebuchet MS","Hiragino Kaku Gothic ProN" ,Meiryo,sans-serif;
+}
+
+.item .category::before{
+    content: ' ';
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-right: 5px;
+    vertical-align: -5px;
+}
+
+.item-maindish,
+.item-maindish .category::before{
+    border-color:#FFC0CB;
+}
+
+.item-appetizer,
+.item-appetizer .category::before{
+    border-color: #76C047;
+}
+
+.item-column,
+.item-column .category::before{
+    border-color: #FFF100;
+}
+
+.item-breaktime,
+.item-breaktime .category::before{
+    border-color:#C1EFFF;
+}
+
+.item .destruction{
+    line-height: 1.5rem;
+    margin: 10px;
+}
+
+.item .more{
+    display: inline-block;
+    position: absolute;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Trebuchet MS","Hiragino Kaku Gothic ProN" ,Meiryo,sans-serif;
+    line-height: 3rem;
+    margin: 35px 32px 0;
+}
+
+.item-m .more{
+    margin: 53px 124px;
+}
+
+.item-l .more{
+    margin: 181px 308px;
+}
+
+.item .more:hover{
+    display: inline-block;
+}
+
+.item-m .more::after{
+    margin: 4px 115px;
+}
+
+.item-l .more::after{
+    margin: 4px 299px;
+}
+
+.header {
+    padding: 25px 0;
+    border-bottom: none;
+    text-align: center;
+}
+
+.logo{
+    width: 136px;
+    height: 136px;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.logo:hover{
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+}
+
+.nav
+{
+    margin: 35px auto 10px;
+}
+
+.nav-item
+{
+    margin-top: 8px;
+}
+
+.nav-item a{
+    display: inline-block;
+}
+
+.nav-item a::after{
+    content: '';
+    width: 0px;
+    display: block;
+    margin: 6px auto 0;
+    border-bottom: 1px solid #7C5119;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after{
+    width: 100%;
+}
